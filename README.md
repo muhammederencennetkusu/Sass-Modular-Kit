@@ -28,9 +28,7 @@ Projenin modülerliği, aşağıdaki mantıksal klasör yapısıyla sağlanmış
 
 Bu metin, projenizin en güçlü yanlarını (mimari, mixin'ler ve `@use` sistemi) vurgular.
 
------
 
-```markdown
 # Sass-Modular-Kit
 
 ## Modüler ve Responsif Ön Yüz Başlangıç Kiti
