@@ -89,4 +89,4 @@ Bu projeyi yerel ortamınızda çalıştırmak ve geliştirmek için ihtiyacın�
     ```
 3.  **Çalıştırın:**
     `index.html` dosyasını tarayıcınızda açın ve responsive yapının ve bileşenlerin çalıştığını kontrol edin.
-````
+
