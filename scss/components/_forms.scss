@@ -1,0 +1,16 @@
+// scss/components/_forms.scss
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+// Formlar için temel stil
+.form-group {
+    margin-bottom: v.$spacing-unit * 2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    @include m.form-input-base();
+}

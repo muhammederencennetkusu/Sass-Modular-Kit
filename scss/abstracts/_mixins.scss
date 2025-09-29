@@ -1,0 +1,47 @@
+@use './variables'; // Değişkenleri çağırıyoruz
+
+// Responsif Tasarım Mixin'i
+@mixin respond-up($size) {
+  @if $size =="tablet" {
+
+    // Tablet ve üzeri için kural
+    @media (min-width: variables.$breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @else if $size =="desktop" {
+
+    // Masaüstü ve üzeri için kural
+    @media (min-width: variables.$breakpoint-desktop) {
+      @content;
+    }
+  }
+
+  @else {
+    // Hata mesajı (opsiyonel)
+    @error "Bilinmeyen ekran boyutu '#{$size}'. Lütfen 'tablet' veya 'desktop' kullanın.";
+  }
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: 1.2;
+}
+
+
+@mixin form-input-base() {
+  width: 100%;
+  padding: variables.$spacing-unit-small;
+  margin-bottom: variables.$spacing-unit;
+  border: 1px solid variables.$color-border;
+  border-radius: variables.$border-radius-base;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: variables.$color-primary;
+    outline: none;
+  }
+}
