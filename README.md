@@ -26,9 +26,6 @@ Bu projede kurulan ve sergilenen ileri düzey Sass mimari becerileri şunlardır
 
 Projenin modülerliği, aşağıdaki mantıksal klasör yapısıyla sağlanmıştır:
 
-
-Elbette\! GitHub'a doğrudan kopyalayıp yapıştırabileceğiniz, saf Markdown formatında bir **README.md** metni aşağıdadır.
-
 Bu metin, projenizin en güçlü yanlarını (mimari, mixin'ler ve `@use` sistemi) vurgular.
 
 -----
